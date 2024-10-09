@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Registro de empleados y departamentos XYZ</h1>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container{
+
+            display:flex;
+            align-content:center;
+            justify-content:center;
+            gap:40px
+        }
+
+        .btn{
+            display: inline-block;
+            border: 2px solid black;
+            font-size: 2rem;
+            margin-top: 20px;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: black;
+            text-align: center;
+            transition: 0.3s;
+            text-decoration:none
+    
+        
+        
+        }
+
+        .btn:hover {
+            display: inline-block;
+            border: 2px solid black;
+            font-size: 2rem;
+            margin-top: 20px;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: white;
+            text-align: center;
+            transition: 0.3s;
+            background-color: black;
+        }
+
+
+
+    </style>
+
+
+    <div class="container">
+
+
+        <a class="btn" asp-area="" asp-controller="Empleadoes" asp-action="Index">Empleados</a>
+        
+
+        <a class="btn" asp-area="" asp-controller="Departamentoes" asp-action="Index">Departamentos</a>
+
+
+    </div>
+
+</div>
